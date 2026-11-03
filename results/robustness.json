@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "dark": 0.906,
+    "noise": 0.6611
+  },
+  "depthwise": {
+    "dark": 0.8861,
+    "noise": 0.5983
+  },
+  "se": {
+    "dark": 0.9067,
+    "noise": 0.678
+  },
+  "depthwise_se": {
+    "dark": 0.8863,
+    "noise": 0.5928
+  }
+}
