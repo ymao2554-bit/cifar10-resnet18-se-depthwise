@@ -4,6 +4,8 @@
 
 本项目比较四个从零训练的模型：CIFAR 适配的半宽 ResNet-18、深度可分离卷积版、SE 注意力版以及二者组合版。所有实验使用相同的数据划分、训练设置和随机种子。`results/*.json` 是报告数值的唯一来源。
 
+仓库保留代码、模型权重、实验结果和图表。课程报告作为本地交付文件保存，仓库不包含成品 Word 文档；运行下方命令可重新生成。
+
 ## 数据
 
 从 [CIFAR-10 官方页面](https://www.cs.toronto.edu/~kriz/cifar.html) 下载 **CIFAR-10 python version**，将 `cifar-10-python.tar.gz` 放入 `data/`，解压后应存在 `data/cifar-10-batches-py/`。可用 `tar -xzf data/cifar-10-python.tar.gz -C data` 解压。原始训练集 50,000 张，按种子 42 分出 45,000 张训练和 5,000 张验证；官方测试集 10,000 张仅用于最终评估。训练采用随机裁剪、水平翻转和归一化；验证与测试只做归一化。
@@ -25,6 +27,7 @@ python train.py --model depthwise_se --epochs 30 --workers 2 --data data --out r
 python analyze.py
 python predict.py path/to/image.png --model baseline
 python make_report.py
+powershell -File finalize_wps.ps1
 python verify_report.py
 ```
 
