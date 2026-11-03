@@ -4,5 +4,4 @@ numpy
 matplotlib
 scikit-learn
 Pillow
-python-docx
 requests

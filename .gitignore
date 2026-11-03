@@ -8,4 +8,8 @@ CNN结构修改与场景适配实验报告.docx
 *_WPS.docx
 ~$*
 create_github_repo.ps1
+make_report.py
+finalize_wps.ps1
+verify_report.py
+repository_url.txt
 *.tmp

@@ -1,1 +1,0 @@
-https://github.com/ymao2554-bit/cifar10-resnet18-se-depthwise
